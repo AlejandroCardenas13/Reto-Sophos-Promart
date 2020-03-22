@@ -4,6 +4,7 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
 
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
@@ -11,6 +12,15 @@ javadoc.options.encoding = 'UTF-8'
 
 repositories {
     mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.90")
+    }
 }
 
 ext {
@@ -26,6 +36,8 @@ dependencies {
     compile "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
     //  compile "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
+    testCompile 'org.slf4j:slf4j-simple:1.7.7'
+
 }
 
 test {
