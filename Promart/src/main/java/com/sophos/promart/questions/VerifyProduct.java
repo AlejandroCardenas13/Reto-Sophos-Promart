@@ -9,7 +9,7 @@ import static com.sophos.promart.userinterfaces.ShoppingCartPage.*;
 
 /**
  * Question donde se valida el carrito de compras y
- * que el producto que se selecciono del catálogo se encuentre en él.
+ * que el producto que se seleccionó del catálogo se encuentre en él.
  */
 
 

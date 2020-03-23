@@ -44,7 +44,7 @@ public class SelectAProduct implements Task {
                 Click.on(IMAGEN_OF_PRODUCT.resolveAllFor(actor).get(commonFunctions.getRandomNumberInterval(14, 4))),
                 WaitUntil.the(BUTTON_ADD_PRODUCT, isCurrentlyEnabled()).forNoMoreThan(5).seconds());
         product.setName(LABLE_PRODUCT_NAME.resolveFor(actor).getText());
-        product.setPrice(LABLE_PRODUCT_PRICE.resolveFor(actor).getText().substring(9));
+        product.setPrice(LABLE_PRODUCT_PRICE.resolveFor(actor).getText().substring(9).split("\\.")[0]);
         actor.attemptsTo(
                 Click.on(BUTTON_ADD_PRODUCT),
                 WaitUntil.the(BUTTON_GO_TO_SHOPPING_CART, isCurrentlyVisible()).forNoMoreThan(5).seconds()
