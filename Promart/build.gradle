@@ -35,7 +35,7 @@ dependencies {
     compile "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
-    //  compile "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
+    compile "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
     testCompile 'org.slf4j:slf4j-simple:1.7.7'
 
 }
