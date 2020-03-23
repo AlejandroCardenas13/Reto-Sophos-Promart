@@ -43,7 +43,7 @@ Una capa donde se crearán las excepciones específicas que permitirán la legib
 ## Detalles Generales
 Navegador: Chrome
 Versión: 80.0.3
-Versión Gradle Wrapper: 4.10.3 
+Versión Gradle Wrapper: 5.4.1 
 
 
 
